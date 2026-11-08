@@ -1,0 +1,1 @@
+"""VideoShrink desktop application."""

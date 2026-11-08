@@ -1,0 +1,38 @@
+VideoShrink 1.1.6 — third-party component record
+Recorded: 2026-11-07
+
+FFmpeg Windows x64 static Essentials build
+- Publisher: Gyan Doshi, https://www.gyan.dev/ffmpeg/builds/
+- Release: FFmpeg 9.0.2 Essentials, release archive dated 2026-09-19
+- Archive: https://github.com/GyanD/codexffmpeg/releases/download/9.0.2/ffmpeg-9.0.2-essentials_build.zip
+- SHA-256 of archive: 60f467265b1e312373dbcd92200c2618a74850f98d3d078e94296bb3fa2047ba
+- License declared by the build publisher: GPL version 3
+- FFmpeg source commit: https://github.com/FFmpeg/FFmpeg/commit/946fcce07b
+- Build configuration, enabled codecs/filters, and exact external-library versions: FFmpeg-BUILD-README.txt
+- Required encoders and filter verified in the packaged binary: libx264, libx265, libvmaf
+- Publisher's build archive/release record: https://github.com/GyanD/codexffmpeg/releases/tag/9.0.2
+
+Important linked components listed by the build README include x264 0.165.3223, x265 4.3-45-g116b875, and VMAF 3.2.0-13-gf85a8536. Upstream source locations:
+- x264: https://code.videolan.org/videolan/x264
+- x265: https://bitbucket.org/multicoreware/x265_git
+- VMAF: https://github.com/Netflix/vmaf
+- FFmpeg: https://github.com/FFmpeg/FFmpeg
+
+The complete component/version list and configure information are preserved in FFmpeg-BUILD-README.txt. FFmpeg's license depends on the exact configuration; the publisher identifies this static build as GPLv3. The linked libraries retain their own licenses and notices. This record identifies the exact package and upstream source locations; it is not a substitute for delivering complete corresponding source or a valid written source offer where required by a component license.
+
+PyInstaller
+- Version used to build: 6.22.3; transitive versions are pinned in requirements-lock.txt.
+- Project and source: https://github.com/pyinstaller/pyinstaller
+- License text is included as PyInstaller-LICENSE.txt when available in the build environment.
+
+Python and Tcl/Tk
+- Python: 3.12.14 x64; license text is included as Python-LICENSE.txt when available.
+- Tcl/Tk license terms are copied to TclTk-license.terms when available.
+
+NSIS installer compiler
+- Version: NSIS 3.13; upstream release: https://sourceforge.net/projects/nsis/files/NSIS%203/3.13/
+- Windows x64 build package: https://mirror.msys2.org/mingw/clang64/mingw-w64-clang-x86_64-nsis-3.13-2-any.pkg.tar.zst
+- SHA-256: C7023E481C2B54F3DE4B588FC9843154D4E87CE851D7CBBDFCE6069D9B0307FF
+- MSYS2 package source record: https://packages.msys2.org/packages/mingw-w64-clang-x86_64-nsis
+- NSIS upstream source archive: https://mirror.msys2.org/mingw/sources/mingw-w64-nsis-3.13-2.src.tar.zst
+- The NSIS COPYING file is included as NSIS-LICENSE.txt. The setup is compiled with the zlib compressor; the LZMA compressor, which uses a different license, is not selected.
